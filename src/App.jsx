@@ -19,7 +19,10 @@ function App() {
           <div className='col-4 m-3 border border-info'>
             <Sidebar />
           </div>
-          <div style={{height:"300px"}} className='col m-3 border border-danger'>
+          <div style={{height:"400px"}} className='col m-3 border border-danger'>
+            
+            
+            
             <MainContent/>
           </div>
         </div>
