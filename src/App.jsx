@@ -3,35 +3,25 @@ import Menu from './parts/Menu';
 import Sidebar from './parts/Sidebar';
 import MainContent from './parts/MainContent';
 import Footer from './parts/Footer';
+
+function Seperator(props){
+  let data = "";
+  for(let i=0;i<props.count;i++){
+    data+=props.by;
+  }
+  return(data);
+}
+
 function App() {
+  
   return (
     <>
-      <div className="container">
-        <div className="row">
-          <div className="col-2 m-3 border border-primary">
-            <Logo/>
-          </div>
-          <div className="col m-3 border border-danger">
-            <Menu />
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col-4 m-3 border border-info'>
-            <Sidebar />
-          </div>
-          <div style={{height:"400px"}} className='col m-3 border border-danger'>
-            
-            
-            
-            <MainContent/>
-          </div>
-        </div>
-        <div className='row'>
-          <div className='col m-3 border border-primary'>
-            <Footer />
-          </div>
-        </div>
-      </div>
+      <h1>arjun</h1>
+      <Seperator by="=" count="10"/>
+      <h1>bala</h1>
+      <Seperator by="-" count="210"/>
+      <h1>darshan</h1>
+      <Seperator by="%" count="5"/>
     </>
   );
 }
